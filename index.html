@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Snake Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="game-area">
+<canvas id="game" width="600" height="600"></canvas>
+</div>
+
+<div class="side-panel">
+
+<h2>Snake Game</h2>
+
+<p>Score: <span id="score">0</span></p>
+<p>Level: <span id="level">1</span></p>
+
+<button onclick="restartGame()">Restart</button>
+<button onclick="pauseGame()">Pause</button>
+
+<p>Controls</p>
+<p>⬆ ⬇ ⬅ ➡ Arrow Keys</p>
+
+</div>
+
+</div>
+
+<div id="gameOver" class="overlay">
+<h2>Game Over</h2>
+<button onclick="restartGame()">Play Again</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
